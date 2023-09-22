@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPS</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css Styling -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div><h2 class="heading-txt">Metro-Game</h2></div>
+
+      <div class="header-cont">
+        <p class="heading-desc">Rock, Paper, Scissors</p>
+        <div class="time"><div class="timer">Time: 3:00</div></div>
+      </div>
+    </div>
+
+    <main class="game-selection">
+      <div class="container grid grid-2-cols">
+        <div class="player-board">
+          <h3 class="board-heading">Player 1</h3>
+          <div class="gm-cont">
+            <div class="game-board">
+              <div class="img-selector">
+                <img class="brd-img" src="image/quest.jpg" alt="rps" />
+              </div>
+              <div class="num-cont">
+                <div class="img-cont">
+                  <h4>Rock</h4>
+                </div>
+              </div>
+            </div>
+            <div class="board-score">
+              <h4>score</h4>
+              <div class="score-update">0</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="player-board">
+          <h3 class="board-heading comp">Computer</h3>
+          <div class="gm-cont">
+            <div class="game-board">
+              <div class="img-selector">
+                <img class="brd-img" src="image/quest.jpg" alt="rps" />
+              </div>
+              <div class="num-cont">
+                <div class="img-cont">
+                  <h4>Paper</h4>
+                </div>
+              </div>
+            </div>
+            <div class="board-score">
+              <h4>score</h4>
+              <div class="score-update">0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toss">
+        <button class="btn play">Toss</button>
+      </div>
+    </main>
+
+    <selection class="rees">
+      <div class="result">
+        <h3>🎉 Congratulation's, you win!!!</h3>
+      </div>
+    </selection>
+    <script defer src="script.js"></script>
+  </body>
+</html>
